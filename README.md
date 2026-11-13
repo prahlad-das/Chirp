@@ -77,7 +77,7 @@ The core business capabilities are divided into dedicated microservices:
   * Queries **Chirp Cache** with fallback to **Chirp Store (NoSQL)** on cache miss.
   * Emits published tweets to **Apache Kafka** for asynchronous processing.
   * Emits runtime metrics to the **Metrics Collector**.
-* **Source Code**: *Pending*
+* **Source Code**: [chirp_chirp](https://github.com/prahlad-das/chirp_chirp)
 
 #### Timeline Service (`timeline-svc`)
 * **Responsibilities**: Generates and serves customized user timelines (Home feed and user activity timelines) with sub-second response times.
@@ -94,7 +94,7 @@ The core business capabilities are divided into dedicated microservices:
 * **Data Flow**:
   * Reads follower/following graphs from **Social Graph Cache**, backed by **Social Graph Store (NoSQL)**.
   * Sends operational metrics to the **Metrics Collector**.
-* **Source Code**: *Pending*
+* **Source Code**: [chirp_graph](https://github.com/prahlad-das/chirp_graph)
 
 ---
 
